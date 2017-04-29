@@ -1,6 +1,6 @@
 return {
         server = "eu.freenode.net",
-        nick = "cilium-github",
+        nick = "cilium-bot",
         channels = {
                 "#cilium"
         },
