@@ -3,6 +3,8 @@ project ?=scanf/cilium-irc-bot
 
 docker:
 	docker build -t ${project} .
+docker_nocache:
+		docker build --no-cache=true -t ${project} .
 docker_deploy: docker docker_push
 	echo "Pushed to docker, https://hub.docker.com/r/${project}"
 docker_run: docker
